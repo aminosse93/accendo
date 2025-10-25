@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accendo Charity - Supporting Disability Non-Profits</title>
+    <meta name="description" content="Accendo Charity provides financial support to organizations improving lives of people with disabilities. Join our mission of inclusion and compassion.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Accendo Charity",
+      "url": "https://accendocharity.org",
+      "logo": "https://accendocharity.org/logo.png",
+      "description": "Supporting non-profits that empower people with disabilities",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1055 W 7th St, Suite 3260",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA",
+        "postalCode": "90017",
+        "addressCountry": "US"
+      },
+      "founder": "Kelly Woo",
+      "foundingDate": "2020",
+      "taxID": "83-3359978"
+    }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navbar -->
+    <custom-navbar></custom-navbar>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-r from-blue-500 to-blue-600 text-white py-20 md:py-32 px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Empowering Disability Communities Through Strategic Funding</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Accendo Charity provides vital financial support to non-profit organizations dedicated to improving the lives of people with physical and mental disabilities.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="donate.html" class="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition duration-300">Donate Now</a>
+                    <a href="about.html" class="border-2 border-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-bold text-lg transition duration-300">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Stats -->
+        <section class="py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Impact in Numbers</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                        <div class="text-5xl font-bold text-blue-500 mb-3">$1.2M+</div>
+                        <p class="text-gray-600">Funds distributed to disability non-profits</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                        <div class="text-5xl font-bold text-blue-500 mb-3">42</div>
+                        <p class="text-gray-600">Organizations supported nationwide</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                        <div class="text-5xl font-bold text-blue-500 mb-3">15K+</div>
+                        <p class="text-gray-600">Lives impacted through our partners</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Programs -->
+        <section class="py-16 px-4 bg-gray-100">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Funding Focus Areas</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                        <i data-feather="heart" class="w-12 h-12 mx-auto mb-4 text-blue-500"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Mental Health Support</h3>
+                        <p class="text-gray-600">Funding counseling services and mental health programs for individuals with disabilities.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                        <i data-feather="users" class="w-12 h-12 mx-auto mb-4 text-blue-500"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Community Inclusion</h3>
+                        <p class="text-gray-600">Supporting programs that promote social integration and community participation.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                        <i data-feather="briefcase" class="w-12 h-12 mx-auto mb-4 text-blue-500"></i>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Employment Training</h3>
+                        <p class="text-gray-600">Funding vocational programs and job placement services for people with disabilities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-16 px-4 bg-blue-50">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800">Join Us in Making a Difference</h2>
+                <p class="text-xl text-gray-600 mb-8">Every donation helps us support more organizations working directly with disability communities.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="donate.html" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition duration-300">Donate Now</a>
+                    <a href="contact.html" class="bg-white hover:bg-gray-100 text-blue-600 border border-blue-500 px-8 py-4 rounded-lg font-bold text-lg transition duration-300">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+
+    <!-- Scripts -->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Accessibility Focus Styles */
+:focus {
+    outline: 3px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Screen Reader Only Class */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Typography */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+}
+
+/* Skip to Content Link */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1rem;
+    background-color: #3b82f6;
+    color: white;
+    opacity: 0;
+}
+
+.skip-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+/* Contrast adjustments for accessibility */
+a:not(.btn) {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+a:not(.btn):hover {
+    color: #1d4ed8;
+}
+
+/* Form field accessibility */
+input, textarea, select {
+    min-height: 44px;
+}
+
+/* Blue color scheme overrides */
+.bg-blue-50 { background-color: #eff6ff; }
+.bg-blue-500 { background-color: #3b82f6; }
+.bg-blue-600 { background-color: #2563eb; }
+.text-blue-500 { color: #3b82f6; }
+.text-blue-600 { color: #2563eb; }
+.border-blue-500 { border-color: #3b82f6; }
+.from-blue-500 { --tw-gradient-from: #3b82f6; }
+.to-blue-600 { --tw-gradient-to: #2563eb; }
+.hover\:bg-blue-50:hover { background-color: #eff6ff; }
+.hover\:bg-blue-600:hover { background-color: #2563eb; }

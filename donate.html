@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Hope Igniters Collective</title>
+    <meta name="description" content="Support Hope Igniters Collective. Your donation helps us empower people with disabilities through our partner organizations.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main id="main">
+        <section class="bg-gradient-to-r from-pink-500 to-pink-600 text-white py-20 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Your Support Ignites Hope</h1>
+                <p class="text-xl md:text-2xl">Every contribution, big or small, fuels our mission and makes a tangible difference in the lives of people with disabilities.</p>
+            </div>
+        </section>
+
+        <section class="py-16 px-4">
+            <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Make a Secure Donation</h2>
+                <form id="donation-form" class="grid grid-cols-1 gap-6">
+                    <div>
+                        <label class="font-semibold text-gray-700 block mb-2">Choose an Amount</label>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <button type="button" class="amount-btn border border-gray-300 p-4 rounded-lg font-bold text-lg hover:bg-pink-50 hover:border-pink-500 transition">$25</button>
+                            <button type="button" class="amount-btn border border-gray-300 p-4 rounded-lg font-bold text-lg hover:bg-pink-50 hover:border-pink-500 transition">$50</button>
+                            <button type="button" class="amount-btn border border-gray-300 p-4 rounded-lg font-bold text-lg hover:bg-pink-50 hover:border-pink-500 transition">$100</button>
+                            <button type="button" class="amount-btn border border-gray-300 p-4 rounded-lg font-bold text-lg hover:bg-pink-50 hover:border-pink-500 transition">$250</button>
+                        </div>
+                        <input type="number" name="custom_amount" placeholder="Or enter a custom amount" class="w-full mt-4 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500">
+                    </div>
+
+                    <div>
+                        <label for="full-name" class="font-semibold text-gray-700 block mb-2">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500">
+                    </div>
+                    <div>
+                        <label for="email" class="font-semibold text-gray-700 block mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500">
+                    </div>
+
+                    <div>
+                        <label class="font-semibold text-gray-700 block mb-2">Payment Information</label>
+                        <div class="bg-gray-100 p-4 rounded-lg border border-gray-200">
+                            <p class="text-gray-600">A secure payment gateway (like Stripe or PayPal) would be integrated here.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition duration-300">Donate Now</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

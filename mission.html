@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mission - Hope Igniters Collective</title>
+    <meta name="description" content="Learn about the mission, vision, and values that drive Hope Igniters Collective.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main id="main">
+        <section class="bg-gradient-to-r from-pink-500 to-pink-600 text-white py-20 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Our Guiding Purpose</h1>
+                <p class="text-xl md:text-2xl">To fuel a world where every person with a disability has the opportunity to thrive.</p>
+            </div>
+        </section>
+
+        <section class="py-16 px-4">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="http://static.photos/business/640x480/1" alt="Diverse group of people collaborating" class="rounded-xl shadow-lg">
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Mission</h2>
+                        <p class="text-lg text-gray-600">To provide strategic funding and support to innovative non-profit organizations that empower individuals with disabilities, fostering inclusion, independence, and a higher quality of life.</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Vision</h2>
+                        <p class="text-lg text-gray-600">We envision a society that fully embraces disability as a part of human diversity, where barriers to access and opportunity are eliminated, and every individual can ignite their full potential.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 px-4 bg-gray-100">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Core Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                        <i data-feather="heart" class="w-12 h-12 mx-auto mb-4 text-pink-500"></i>
+                        <h3 class="text-2xl font-bold mb-2">Empowerment</h3>
+                        <p class="text-gray-600">We champion self-determination and provide tools for independence.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                        <i data-feather="users" class="w-12 h-12 mx-auto mb-4 text-pink-500"></i>
+                        <h3 class="text-2xl font-bold mb-2">Inclusion</h3>
+                        <p class="text-gray-600">We believe in a world where everyone belongs and has a voice.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                        <i data-feather="zap" class="w-12 h-12 mx-auto mb-4 text-pink-500"></i>
+                        <h3 class="text-2xl font-bold mb-2">Innovation</h3>
+                        <p class="text-gray-600">We fund creative and effective solutions to long-standing challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

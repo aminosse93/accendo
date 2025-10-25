@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Hope Igniters Collective</title>
+    <meta name="description" content="Join our team of volunteers and help us ignite hope. Find opportunities to contribute your time and skills.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main id="main">
+        <section class="bg-gradient-to-r from-pink-500 to-pink-600 text-white py-20 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Become a Hope Igniter</h1>
+                <p class="text-xl md:text-2xl">Your time and talent can make a world of difference. Join us in our mission to empower disability communities.</p>
+            </div>
+        </section>
+
+        <section class="py-16 px-4">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold text-gray-800">Why Volunteer With Us?</h2>
+                    <p class="text-lg text-gray-600">Volunteering with the Hope Igniters Collective means you're directly contributing to a network of 42 partner organizations. Your efforts help us amplify our impact, support vital programs, and create a more inclusive world.</p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start"><i data-feather="check-circle" class="w-6 h-6 mr-3 text-pink-500 mt-1"></i><span><strong>Make a Direct Impact:</strong> See the tangible results of your contribution.</span></li>
+                        <li class="flex items-start"><i data-feather="check-circle" class="w-6 h-6 mr-3 text-pink-500 mt-1"></i><span><strong>Join a Community:</strong> Connect with passionate individuals dedicated to the same cause.</span></li>
+                        <li class="flex items-start"><i data-feather="check-circle" class="w-6 h-6 mr-3 text-pink-500 mt-1"></i><span><strong>Develop Your Skills:</strong> Gain experience in fundraising, event planning, and non-profit management.</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="http://static.photos/people/640x480/3" alt="A group of smiling volunteers" class="rounded-xl shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 px-4 bg-gray-100">
+            <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Sign Up to Volunteer</h2>
+                <form id="volunteer-form" class="grid grid-cols-1 gap-6">
+                    <div>
+                        <label for="volunteer-name" class="font-semibold text-gray-700 block mb-2">Full Name</label>
+                        <input type="text" id="volunteer-name" name="volunteer-name" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500">
+                    </div>
+                    <div>
+                        <label for="volunteer-email" class="font-semibold text-gray-700 block mb-2">Email Address</label>
+                        <input type="email" id="volunteer-email" name="volunteer-email" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500">
+                    </div>
+                    <div>
+                        <label for="volunteer-interests" class="font-semibold text-gray-700 block mb-2">Areas of Interest (Optional)</label>
+                        <textarea id="volunteer-interests" name="volunteer-interests" rows="4" placeholder="e.g., Event support, fundraising, administrative help..." class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition duration-300">I'm Ready to Help!</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
